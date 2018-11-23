@@ -1,7 +1,7 @@
 # node-task
 Tasks manager App
 
-#Steps to Setup
+# Steps to Setup
 1. Install Independencies
     npm install
 

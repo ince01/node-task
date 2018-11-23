@@ -1,0 +1,41 @@
+{
+  "name": "tasks-manager",
+  "version": "1.0.0",
+  "description": "Task manager.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run apidoc && babel-node inde.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc",
+    "test": "NODE_ENV=test mocha test/**/*.js"
+  },
+  "apidoc": {
+    "name": "Node Task API - Documentation",
+    "tamplate": {
+      "forceLanguage": "en"
+    }
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "jwt-simple": "^0.5.5",
+    "parse-server": "^3.1.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^4.41.0",
+    "sqlite3": "^4.0.3"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
